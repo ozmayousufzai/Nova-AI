@@ -1,34 +1,71 @@
-# NOVA AI — Web-Grounded Version
+# NOVA AI — Web Search Assistant
 
-NOVA is a portfolio-quality AI-tool discovery site with a web-grounded Ask NOVA experience.
+🌐 **Live Demo:** https://nova-ai-yyz6.onrender.com/
 
-## What this version does
+NOVA AI is a responsive web search assistant that searches the live web and presents useful answers and source links directly inside the application.
 
-- No OpenAI integration.
-- No Google tab opens when asking a question.
-- Ask NOVA searches the live web through Brave Search Answers API.
-- The answer appears inside the NOVA interface.
-- Clickable source links appear below the answer.
-- API key stays on the server in `.env` and is never placed in browser JavaScript.
-- All existing discovery, collections, favorites, comparison, theme, and responsive features remain.
+The project was built to explore modern web development, API integration, responsive UI design, server-side development, and secure handling of API credentials.
 
-## Run it
+## ✨ Features
 
-1. Install Node.js.
-2. Open this folder in VS Code.
-3. Open the terminal in this folder.
-4. Run `npm install`.
-5. Copy `.env.example` and rename the copy to `.env`.
-6. Create a Brave Search API key and put it after `BRAVE_SEARCH_API_KEY=`.
-7. Run `npm start`.
-8. Open `http://127.0.0.1:5500`.
+- 🔎 Real-time web search
 
-Do not use Live Server for this version because the Node server provides `/api/ask`.
+- 💬 Answers displayed directly inside the application
 
-## API cost
+- 🔗 Source links for researched information
 
-Brave Search currently advertises free monthly credits on its Search plan, while the Answers API is usage-based. Check the current Brave pricing before publishing or using it heavily.
+- 📱 Responsive design for desktop and mobile
 
-## Security
+- 🧭 Responsive navigation
 
-Never upload `.env` to GitHub. Keep the API key server-side.
+- 📚 Curated AI tool collections
+
+- ⚡️ Fast search experience
+
+- 🔐 Server-side API integration
+
+- 🌐 Deployed as a live web application
+
+## 🛠️ Technologies
+
+- HTML5
+
+- CSS3
+
+- JavaScript
+
+- Node.js
+
+- Express.js
+
+- Tavily Search API
+
+- Git & GitHub
+
+- Render
+
+## 🏗️ How It Works
+
+```text
+
+User
+
+  ↓
+
+NOVA AI Interface
+
+  ↓
+
+Express.js Server
+
+  ↓
+
+Tavily Web Search API
+
+  ↓
+
+Live Web Results
+
+  ↓
+
+Answer + Sources
