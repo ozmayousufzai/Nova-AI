@@ -1,5 +1,7 @@
 # NOVA AI — Web Search Assistant
+## 📸 Preview
 
+![NOVA AI Preview](nova-ai-preview.png)
 🌐 **Live Demo:** https://nova-ai-yyz6.onrender.com/
 
 NOVA AI is a responsive web search assistant that searches the live web and presents useful answers and source links directly inside the application.
