@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NOVA AI — discover useful AI tools, workflows and ideas." />
+  <title>NOVA AI — Discover AI Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="NOVA AI home">
+      <span class="brand-mark">✦</span>
+      <span>NOVA<span class="brand-ai">AI</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#discover">Discover</a>
+      <a href="#collections">Collections</a>
+      <a href="#playground">Playground</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☼</button>
+      <button class="menu-btn" id="menuToggle" aria-label="Open menu">☰</button>
+      <a class="header-cta" href="#discover">Explore ↗</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> THE AI TOOL UNIVERSE</div>
+        <h1>Turn curiosity<br><em>into capability.</em></h1>
+        <p class="hero-text">
+          Discover useful AI tools, build smarter workflows, and find the technologies
+          that move your ideas forward.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#discover">Explore the universe ↗</a>
+          <a class="btn btn-secondary" href="#playground">Try the playground <span>▶</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12</strong><span>curated tools</span></div>
+          <div><strong>5</strong><span>practical categories</span></div>
+          <div><strong>∞</strong><span>ideas to explore</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Abstract AI network illustration">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orb orb-three"></div>
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="core">
+          <span>✦</span>
+          <b>NOVA</b>
+          <small>INTELLIGENCE</small>
+        </div>
+        <div class="floating-card card-a">✦ WRITE<br><small>Ideas → words</small></div>
+        <div class="floating-card card-b">⌘ BUILD<br><small>Less friction</small></div>
+        <div class="floating-card card-c">✧ DISCOVER<br><small>New possibilities</small></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <span>AI FOR WRITING</span><i>✦</i>
+      <span>AI FOR RESEARCH</span><i>✦</i>
+      <span>AI FOR DESIGN</span><i>✦</i>
+      <span>AI FOR CODE</span><i>✦</i>
+      <span>AI FOR PRODUCTIVITY</span><i>✦</i>
+      <span>AI FOR MARKETING</span><i>✦</i>
+    </div>
+
+    <section class="section" id="discover">
+      <div class="section-heading">
+        <div>
+          <span class="section-number">01 / DISCOVER</span>
+          <h2>Find the right tool<br><em>for the job.</em></h2>
+        </div>
+        <p>Explore a hand-picked collection of practical AI tools. Search, filter, save and compare.</p>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search tools, categories, use cases..." />
+          <kbd>⌘ K</kbd>
+        </label>
+        <select id="sortSelect" aria-label="Sort tools">
+          <option value="featured">Featured</option>
+          <option value="rating">Highest rated</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </div>
+
+      <div class="chips" id="categoryChips">
+        <button class="chip active" data-category="All">All</button>
+        <button class="chip" data-category="Writing">Writing</button>
+        <button class="chip" data-category="Research">Research</button>
+        <button class="chip" data-category="Design">Design</button>
+        <button class="chip" data-category="Code">Code</button>
+        <button class="chip" data-category="Productivity">Productivity</button>
+      </div>
+
+      <div class="tool-grid" id="toolGrid"></div>
+      <div class="empty-state hidden" id="emptyState">No tools found. Try another search.</div>
+    </section>
+
+    <section class="compare-section">
+      <div class="compare-head">
+        <div>
+          <span class="section-number">02 / COMPARE</span>
+          <h2>Build your <em>AI stack.</em></h2>
+        </div>
+        <p>Select up to three tools to compare.</p>
+      </div>
+      <div id="comparePanel" class="compare-panel">
+        <div class="compare-placeholder">Choose tools above and they will appear here.</div>
+      </div>
+    </section>
+
+    <section class="section collections" id="collections">
+      <div class="section-heading">
+        <div>
+          <span class="section-number">03 / COLLECTIONS</span>
+          <h2>Start with a<br><em>workflow.</em></h2>
+        </div>
+        <p>Curated starting points for common creative and professional goals.</p>
+      </div>
+      <div class="collection-grid">
+        <button class="collection-card" data-collection="student">
+          <span>01</span><b>Student Power Kit</b><small>Research · Notes · Writing</small><strong>↗</strong>
+        </button>
+        <button class="collection-card" data-collection="creator">
+          <span>02</span><b>Creator Studio</b><small>Design · Video · Ideas</small><strong>↗</strong>
+        </button>
+        <button class="collection-card" data-collection="builder">
+          <span>03</span><b>Builder Stack</b><small>Code · Research · Launch</small><strong>↗</strong>
+        </button>
+      </div>
+    </section>
+
+    <section class="playground" id="playground">
+      <div class="playground-copy">
+        <span class="section-number">04 / PLAYGROUND</span>
+        <h2>Give NOVA<br><em>something to think about.</em></h2>
+        <p>Ask NOVA a question and get a web-grounded answer directly inside the site, with clickable sources. Your API key stays on the server.</p>
+        <div class="prompt-suggestions">
+          <button data-prompt="Create a simple study plan for learning JavaScript.">Study plan</button>
+          <button data-prompt="Give me three creative ideas for an AI portfolio project.">Portfolio ideas</button>
+          <button data-prompt="Explain APIs in simple language.">Explain APIs</button>
+        </div>
+      </div>
+
+      <div class="playground-card">
+        <div class="playground-top"><span class="live-dot"></span> NOVA PLAYGROUND <span class="demo-label">WEB SEARCH</span></div>
+        <textarea id="promptInput" placeholder="Ask NOVA anything..."></textarea>
+        <div class="playground-actions">
+          <button class="btn btn-primary" id="runPrompt">Ask NOVA ✦</button>
+          <button class="copy-btn" id="copyResponse">Copy</button>
+        </div>
+        <div class="response-box" id="responseBox">
+          <div class="response-head"><span class="response-label">NOVA</span><span class="response-status" id="responseStatus">READY</span></div>
+          <div id="responseContent"><p>Your response will appear here.</p></div>
+          <div class="source-list hidden" id="sourceList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-mark">N</div>
+      <div>
+        <span class="section-number">05 / ABOUT</span>
+        <h2>AI should feel<br><em>human.</em></h2>
+        <p>NOVA AI is a portfolio concept for discovering tools, comparing capabilities and experimenting with AI-powered workflows through a thoughtful, responsive interface.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop hidden" id="collectionModal" aria-hidden="true"><div class="collection-modal" role="dialog" aria-modal="true"><button class="modal-close" id="closeCollection" aria-label="Close">×</button><span class="section-number" id="collectionNumber">COLLECTION</span><h2 id="collectionTitle">Collection</h2><p id="collectionDescription" class="modal-description"></p><div class="modal-tools" id="collectionTools"></div></div></div>
+  <footer>
+    <div class="brand"><span class="brand-mark">✦</span> NOVA<span class="brand-ai">AI</span></div>
+    <span>Designed & built as a web development portfolio project.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
