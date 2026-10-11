@@ -2,37 +2,37 @@
 ## 📸 Preview
 
 ![NOVA AI Preview](nova-ai-preview.png)
-🌐 **Live Demo:** https://nova-ai-yyz6.onrender.com/
+ **Live Demo:** https://nova-ai-yyz6.onrender.com/
 
 NOVA AI is a responsive web search assistant that searches the live web and presents useful answers and source links directly inside the application.
 
 The project was built to explore modern web development, API integration, responsive UI design, server-side development, and secure handling of API credentials.
 
-## ✨ Features
+##  Features
 
-- 🔎 Real-time web search
+-  Real-time web search
 
-- 💬 Answers displayed directly inside the application
+-  Answers displayed directly inside the application
 
-- 🔗 Source links for researched information
+-  Source links for researched information
 
-- 📱 Responsive design for desktop and mobile
+-  Responsive design for desktop and mobile
 
-- 🧭 Responsive navigation
+-  Responsive navigation
 
-- 📚 Curated AI tool collections
+-  Curated AI tool collections
 
-- ⚡️ Fast search experience
+-  Fast search experience
 
-- 🔐 Server-side API integration
+-  Server-side API integration
 
-- 🌐 Deployed as a live web application
+-  Deployed as a live web application
 
-## 🛠️ Technologies
+##  Technologies
 
-- HTML5
+- HTML
 
-- CSS3
+- CSS
 
 - JavaScript
 
@@ -46,7 +46,7 @@ The project was built to explore modern web development, API integration, respon
 
 - Render
 
-## 🏗️ How It Works
+##  How It Works
 
 ```text
 
