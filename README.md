@@ -1,5 +1,5 @@
 # NOVA AI — Web Search Assistant
-## 📸 Preview
+##  Preview
 
 ![NOVA AI Preview](nova-ai-preview.png)
  **Live Demo:** https://nova-ai-yyz6.onrender.com/
